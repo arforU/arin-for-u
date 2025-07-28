@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+/* Gaya dasar */
+body {
+  background: linear-gradient(to right, #ffc0cb, #ffe4e1);
+  font-family: 'Parisienne', cursive;
+  color: #d63384;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 40px 20px;
+  background-color: #ff69b4;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 4em;
+  margin: 0;
+  text-shadow: 2px 2px #ffb6c1;
+}
+
+p {
+  font-size: 1.5em;
+  max-width: 600px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
+
+/* Gambar Barbie */
+.barbie-img {
+  max-width: 300px;
+  border-radius: 20px;
+  margin-top: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.barbie-img:hover {
+  transform: scale(1.05);
+}
+
+/* Tombol musik */
+.music-control {
+  margin-top: 30px;
+}
+
+button.play-btn {
+  background-color: #ff69b4;
+  color: white;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Parisienne', cursive;
+}
+
+button.play-btn:hover {
+  background-color: #ff85c1;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #ffc0cb;
+  color: #8b0051;
+  font-size: 1em;
+  border-top: 2px dashed #ff69b4;
+}
+
+a {
+  color: white;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #f8d7e4;
+  text-decoration: none;
+}
+
+/* Sparkle animation */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
+/* Responsif: mobile friendly */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  p {
+    font-size: 1.2em;
+    padding: 0 10px;
+  }
+
+  .barbie-img {
+    max-width: 80%;
+  }
+
+  button.play-btn {
+    font-size: 1em;
+    padding: 8px 16px;
+  }
+}
